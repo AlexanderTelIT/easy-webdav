@@ -24,5 +24,5 @@ COPY config /etc/config
 COPY scripts /opt/scripts
 
 RUN chmod -R +x /opt/scripts
-
+RUN mkdir data 
 CMD ["/opt/scripts/start"]
